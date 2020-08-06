@@ -25,19 +25,40 @@
                 <div class="header-content">
                     <strong>Esse s&acirc;o os proffys dispon&iacute;veis</strong>
                     <form id="search-teachers">
-                        <label for="subject">Mat&eacute;ria</label>
-                        <select name="subject" id="subject">
-                            <option value="1"></option>
-                            <option value="2"></option>
-                            <option value="3"></option>
-                            <option value="4"></option>
-                            <option value="5"></option>
-                            <option value="6"></option>
-                            <option value="7"></option>
-                            <option value="8"></option>
-                            <option value="9"></option>
-                            <option value="10"></option>
-                        </select>
+                        <div class="select-block">
+                            <label for="subject">Mat&eacute;ria</label>
+                            <select name="subject" id="subject">
+                                <option value="" disabled="" hidden="">Selecione uma op&ccedil;&acirc;o</option>
+                                <option value="1">Artes</option>
+                                <option value="2">Biologia</option>
+                                <option value="3">Ci&ecirc;ncias</option>
+                                <option value="4">Educa&ccedil;&acirc;o F&iacute;sica</option>
+                                <option value="5">F&iacute;sica</option>
+                                <option value="6">Geografia</option>
+                                <option value="7">Hist&oacute;ria</option>
+                                <option value="8">Matem&aacute;tica</option>
+                                <option value="9">Portugu&ecirc;s</option>
+                                <option value="10">Qu&iacute;mica</option>
+                            </select>
+                        </div>
+                        <div class="select-block">
+                            <label for="weekday">Dia da Semana</label>
+                            <select name="weekday" id="weekday">
+                                <option value="" disabled="" hidden="">Selecione uma op&ccedil;&acirc;o</option>
+                                <option value="1">Domingo</option>
+                                <option value="2">Segunda-Feira</option>
+                                <option value="3">Terça-Feira</option>
+                                <option value="4">Quarta-Feira</option>
+                                <option value="5">Quinta-Feira</option>
+                                <option value="6">Sexta-Feira</option>
+                                <option value="7">S&aacute;bado</option>
+                            </select>
+                        </div>
+                        <div class="input-block">
+                            <label for="time">Hora (De 0 at&eacute; 24)</label>
+                            <input name="time" id="time" type="time" min="0" max="24">
+                        </div>
+                        <button type="submit">Filtrar</button>
 
                     </form>
                 </div>
@@ -46,8 +67,6 @@
             </header>
 
         </div>
-
-<!--1:25-->
 
     </body>
 
