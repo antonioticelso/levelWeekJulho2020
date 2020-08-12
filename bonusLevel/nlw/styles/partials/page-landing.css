@@ -117,7 +117,6 @@
         grid-area: button;
         justify-content: flex-start;
         margin: 0;
-        /*align-self: initial;*/
     }
     .total-connections {
         grid-area: texting;
