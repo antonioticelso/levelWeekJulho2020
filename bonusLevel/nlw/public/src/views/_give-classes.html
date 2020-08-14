@@ -60,23 +60,18 @@
                             <label for="subject">Materia</label>
                             <select name="subject" id="subject" required>
                                 <option value="">Seleciona uma opcao</option>
-                                <option value="1">Artes</option>
-                                <option value="2">Biologia</option>
-                                <option value="3">Ci&ecirc;ncias</option>
-                                <option value="4">Educa&ccedil;&acirc;o F&iacute;sica</option>
-                                <option value="5">F&iacute;sica</option>
-                                <option value="6">Geografia</option>
-                                <option value="7">Hist&oacute;ria</option>
-                                <option value="8">Matem&aacute;tica</option>
-                                <option value="9">Portugu&ecirc;s</option>
-                                <option value="10">Qu&iacute;mica</option>
+
+                                {%for subject in subjects%}
+                                    <option value="{{loop.index}}">{{subject}}</option>
+                                {%endfor%}
+
                             </select>
                         </div>
                         <div class="input-block">
                             <label for="cost">Custo da sua hora/aula
                                 <small>(R$)</small>
                             </label>
-                            <input type="cost" id="cost" type="number" required>
+                            <input name="cost" type="cost" id="cost" type="number" required>
                         </div>
                     </fieldset>
 
@@ -89,13 +84,11 @@
                                 <label for="weekday">Dia da semana</label>
                                 <select name="weekday[]" required>
                                     <option value="" >Selecione uma op&ccedil;&acirc;o</option>
-                                    <option value="0">Domingo</option>
-                                    <option value="1">Segunda-Feira</option>
-                                    <option value="2">Terça-Feira</option>
-                                    <option value="3">Quarta-Feira</option>
-                                    <option value="4">Quinta-Feira</option>
-                                    <option value="5">Sexta-Feira</option>
-                                    <option value="6">S&aacute;bado</option>
+
+                                    {%for weekday in weekdays%}
+                                        <option value="{{loop.index}}" {{ "selected" if filters.weekday == loop.index }}>{{weekday}}</option>
+                                    {%endfor%}
+
                                 </select>
                             </div>
                             <div class="input-block">
