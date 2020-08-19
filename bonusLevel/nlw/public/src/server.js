@@ -8,7 +8,7 @@ const proffys = [
         subject: "Quimica",
         cost: "250",
         weekday: [0],
-        time_form: [720],
+        time_from: [720],
         time_to: [1220]
     },
     {   name: "Mayk Brito Lionel",
@@ -20,7 +20,7 @@ const proffys = [
         subject: "Fisica",
         cost: "400",
         weekday: [2],
-        time_form: [720],
+        time_from: [720],
         time_to: [1220]
     },
     {   name: "Renato Sousa Silva",
@@ -32,7 +32,7 @@ const proffys = [
         subject: "Artes",
         cost: "350",
         weekday: [0, 2, 4],
-        time_form: [720],
+        time_from: [720],
         time_to: [1220]
     }
 ];
